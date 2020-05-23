@@ -1,0 +1,4 @@
+function initOnLoad() {
+    socketIOinit(); 
+    plotlyInit();
+}

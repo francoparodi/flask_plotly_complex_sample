@@ -1,0 +1,26 @@
+:root {
+    --filters: invert(50%) sepia(99%) saturate(1536%) hue-rotate(161deg) brightness(103%) contrast(108%);
+    --main-color: deepskyblue;
+  }
+
+.navbar {
+    border-bottom: 1px solid var(--main-color);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: var(--main-color)
+}
+
+.navbar-dark .navbar-toggler-icon {
+    filter: var(--filters);
+}
+
+.logo {
+    height: 40px;
+}
+
+.navbar-container {
+    max-width: 900px;
+}

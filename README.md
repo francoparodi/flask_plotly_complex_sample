@@ -1,7 +1,9 @@
 # Plotly complex sample
-Sample flask webapp wita little more complex plotly usr.
+Sample flask webapp with a little more complex plotly use.
 
-![Home](docs/plotly.png)
+Data is randomly generated every 2sec.
+
+![Home](docs/flask_plotly_sample.png)
 
 ## Getting Started
 

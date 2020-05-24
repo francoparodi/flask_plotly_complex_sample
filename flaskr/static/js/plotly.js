@@ -1,7 +1,7 @@
 function plotlyInit() {
     var layout = {title: 'Random Data', 
                     showlegend: true, 
-                    legend: { 'orientation': 'h' }, 
+                    legend: { 'orientation': 'v' }, 
                     displayModeBar: true, 
                     /*paper_bgcolor: 'rgba(0,0,0,0)',
                     plot_bgcolor: 'rgba(0,0,0,0)', 
@@ -14,7 +14,8 @@ function plotlyInit() {
                         pad: 0
                       },*/
                     /*colorway : ['#ff0000', '#0044ff', '#71e632'],*/
-                    /*xaxis: {
+                    xaxis: {
+                        title: 'Seconds',
                         autorange: true,
                         showgrid: true,
                         zeroline: false,
@@ -24,6 +25,7 @@ function plotlyInit() {
                         showticklabels: true
                       },
                     yaxis: {
+                        title: 'Values',
                         autorange: true,
                         showgrid: true,
                         zeroline: false,
@@ -31,14 +33,23 @@ function plotlyInit() {
                         autotick: true,
                         ticks: '',
                         showticklabels: true
-                      }*/
+                      }
 
                 };
 
+    // BAR
+    /*
     var initData = [
-        {y:[0], name: 'Value1', mode: 'lines' }, 
-        {y:[0], name: 'Value2', mode: 'lines' }, 
-        {y:[0], name: 'Value3', mode: 'lines' }
+        {y:[0], name: 'Value1', mode: 'lines', type: 'bar'}, 
+        {y:[0], name: 'Value2', mode: 'lines', type: 'bar'}, 
+        {y:[0], name: 'Value3', mode: 'lines', type: 'bar'}
+    ];*/
+
+    // LINE
+    var initData = [
+        {y:[0], name: 'Value1', mode: 'lines'}, 
+        {y:[0], name: 'Value2', mode: 'lines'}, 
+        {y:[0], name: 'Value3', mode: 'lines'}
     ];
 
     Plotly.plot('graphId', initData, layout);

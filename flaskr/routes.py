@@ -34,7 +34,7 @@ def on_handleDaemon(data):
         while not stop_event.is_set():
             setSampleDataValues()
             socketio.emit('daemonProcess', getSampleData().toJson())
-            time.sleep(2)
+            time.sleep(1)
 
     global isDaemonStarted
     if action == 'START':

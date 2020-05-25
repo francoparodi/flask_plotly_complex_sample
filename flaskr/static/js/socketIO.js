@@ -15,6 +15,8 @@ function socketIOinit() {
         var value3 = jObj._SampleData__value3;
         console.log(jObj);
 
-        plotlyDataUpdate(value1, value2, value3);
+        plotlyDataUpdate_line(value1, value2, value3);
+        plotlyDataUpdate_bar(value1, value2, value3);
+        plotlyDataUpdate_surface(value1, value2, value3);
     });
 }

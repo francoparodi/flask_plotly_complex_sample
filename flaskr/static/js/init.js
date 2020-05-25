@@ -1,4 +1,6 @@
 function initOnLoad() {
     socketIOinit(); 
-    plotlyInit();
+    plotlyInit_line();
+    plotlyInit_bar();
+    plotlyInit_surface();
 }

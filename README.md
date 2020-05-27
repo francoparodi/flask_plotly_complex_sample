@@ -1,5 +1,5 @@
 # Plotly complex sample
-Sample flask webapp with a little more complex plotly use.
+Sample flask webapp with some plotly use.
 
 ![Home](docs/flask_plotly_sample_line.gif)
 

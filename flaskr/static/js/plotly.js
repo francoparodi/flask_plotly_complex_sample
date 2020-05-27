@@ -10,7 +10,7 @@ function plotlyInit_line() {
                         zeroline: false,
                         showline: true,
                         autotick: true,
-                        tickangle: 90,
+                        tickangle: 45,
                         ticks: '',
                         showticklabels: true
                       },
@@ -56,7 +56,7 @@ function plotlyInit_bar() {
                       zeroline: false,
                       showline: true,
                       autotick: true,
-                      tickangle: 90,
+                      tickangle: 0,
                       ticks: '',
                       showticklabels: true
                     },
@@ -76,9 +76,9 @@ function plotlyInit_bar() {
   // BAR
   var time = new Date();
   var initData = [
-      {x:[time], y:[0], name: 'Value1', mode: 'lines', type: 'bar'}, 
-      {x:[time],y:[0], name: 'Value2', mode: 'lines', type: 'bar'}, 
-      {x:[time],y:[0], name: 'Value3', mode: 'lines', type: 'bar'}
+      {y:[0], name: 'Value1', mode: 'lines', type: 'bar'}, 
+      {y:[0], name: 'Value2', mode: 'lines', type: 'bar'}, 
+      {y:[0], name: 'Value3', mode: 'lines', type: 'bar'}
   ];
 
   Plotly.plot('graphId_bar', initData, layout);
@@ -87,14 +87,18 @@ function plotlyInit_bar() {
 function plotlyDataUpdate_bar(value1, value2, value3) {
   var time = new Date();
   Plotly.extendTraces('graphId_bar', 
-      {x: [[time], [time], [time]], y: [[value1], [value2], [value3]] }, [0, 1, 2] );
+      {y: [[value1], [value2], [value3]] }, [0, 1, 2] );
 }
 
 function plotlyInit_surface() {
 
-  var x_data=[1,2,3];
-  var y_data=[2,4,6];
-  var z_data=[x_data,y_data];
+  var x_data=[0,1];
+  var y_data=[0,1];
+  var x1_data=[2,3];
+  var y1_data=[2,3];
+  var x2_data=[4,5];
+  var y2_data=[4,5];
+  var z_data=[x_data, y_data, x1_data, y1_data, x2_data, y2_data];
 
       var data = [{
                 z: z_data,

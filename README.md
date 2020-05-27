@@ -3,7 +3,7 @@ Sample flask webapp with a little more complex plotly use.
 
 Data is randomly generated every 2sec.
 
-![Home](docs/flask_plotly_sample.png)
+![Home](docs/flask_plotly_sample.gif)
 
 ## Getting Started
 

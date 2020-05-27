@@ -1,9 +1,11 @@
 # Plotly complex sample
 Sample flask webapp with a little more complex plotly use.
 
-Data is randomly generated every 2sec.
+![Home](docs/flask_plotly_sample_line.gif)
 
-![Home](docs/flask_plotly_sample.gif)
+![Home](docs/flask_plotly_sample_bar.gif)
+
+![Home](docs/flask_plotly_sample_surface.gif)
 
 ## Getting Started
 
